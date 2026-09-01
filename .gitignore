@@ -1,0 +1,33 @@
+# Big files, useless to include
+*.task
+venv/
+
+#Hide all data
+_data/
+_data/Intermediates Pre-CV/
+_data/Intermediates CV/
+_data/Finals Pre-CV/push_users.jsonl
+_data/Finals Pre-CV/skill_docs_sorted.jsonl
+_data/landmarks/
+_data/video_data.csv
+_data/modifier_labels.csv
+_data/rotated_uids.txt
+_data/Finals Pre-CV/
+_videos/
+
+#Hide reverse engineering
+_scripts/scraping/
+_scripts/band_labeler.py
+_scripts/deriverank_2.py
+
+
+#fluff
+CV/computer_vision_2.py
+CV/single_landmarks_reader.py
+
+
+#Hide text
+text/
+
+rotate.ps1
+old .git/
