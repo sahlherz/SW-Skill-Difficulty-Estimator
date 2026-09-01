@@ -2,7 +2,7 @@
 
 This repository contains the code for a project estimating calisthenics skill difficulty from video, using pose estimation and Elo-derived difficulty supervision.
 
-The dataset was built from a ranked calisthenics app's leaderboard (Elo ratings, videos, and skill metadata), collected under a data-use agreement with the platform's founder. The dataset, the app's collection endpoints, and the scraping method are not included in this repository.
+The dataset was built from a ranked calisthenics app's leaderboard (Elo ratings, videos, and skill metadata), collected under a data-use agreement with the platform's founder. The dataset, the app's collection endpoints, and the scraping method are not included in this repository. I included some sample files of my own data.
 
 ## Method
 
