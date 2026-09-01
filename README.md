@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 CV/
 ├── bulk_landmarks_extractor.py     # parallelized extractor of files in _videos -> landmarks. runs mediapipe for all the landmarks. also creates a csv of useful video data
-├── pose_estimation.py              # me experimenting with mediapipe at the beginning, drew green dots on the landmarks to see whether this project would be possible/mediapipe would be suitable
+├── pose_estimation_test.py         # me experimenting with mediapipe at the beginning, drew green dots on the landmarks to see whether this project would be possible/mediapipe would be suitable
 ├── filter_video_names.py           # estimating skill counts in the dataset
 ├── loader.py                       # filters the cohort, most significant filter being the presence or lack of bands/weights, which are invisible in pose space
 └── single_landmarks_extractor.py   # my first extractor, running mediapipe on just one video to create its .npy file
