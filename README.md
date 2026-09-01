@@ -24,6 +24,12 @@ pip install -r requirements.txt
 ## Project structure
 
 ```
+CV/
+├── bulk_landmarks_extractor.py     # parallelized extractor of files in _videos -> landmarks. runs mediapipe for all the landmarks. also creates a csv of useful video data
+├── computer_vision.py              # me experimenting with mediapipe at the beginning, drew green dots on the landmarks to see whether this project would be possible/mediapipe would be suitable
+├── filter_video_names.py           # estimating skill counts in the dataset
+├── loader.py                       # filters the cohort, most significant filter being the presence or lack of bands/weights, which are invisible in pose space
+└── single_landmarks_extractor.py   # my first extractor, running mediapipe on just one video to create its .npy file
 _data/
 ├── landmarks/                      # sample npy, shape [T, 33, 7]         
 └── megalb.csv                      # sample row of the final, unified leaderboard csv file.
@@ -31,15 +37,6 @@ _scripts/
 ├── processing/                     # pose extraction, manifest building, labeling
 ├── build_manifest.py               # used already-computed landmarks as ground truth for rebuilding a video-data file after I fixed an issue of 50 videos being rotated
 └── leaderboard_csv_search.py       # Preliminary search through skill names and descriptions to estimate band usage count; ended up being only 2 off
-_videos/
-└── example video                   # video of me
-CV/
-├── bulk_landmarks_extractor.py     # parallelized extractor of files in _videos -> landmarks. runs mediapipe for all the landmarks. also creates a csv of useful video data
-├── computer_vision.py              # me experimenting with mediapipe at the beginning, drew green dots on the landmarks to see whether this project would be possible/mediapipe would be suitable
-├── filter_video_names.py           # estimating skill counts in the dataset
-├── loader.py                       # filters the cohort, most significant filter being the presence or lack of bands/weights, which are invisible in pose space
-└── single_landmarks_extractor.py   # my first extractor, running mediapipe on just one video to create its .npy file
-
 ```
 
 ## Landmark format
